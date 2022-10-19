@@ -1,0 +1,51 @@
+State,rain_mm,temp_celsius,sun_city,sun_perc,sun_hours,clear_days
+Alabama,1480,17.1,Birmingham,58,2641,99
+Alaska,572,-3.0,Anchorage,41,2061,61
+Arizona,345,15.7,Tucson,85,3806,193
+Arkansas,1284,15.8,Fort Smith,61,2771,123
+California,563,15.2,San Diego,68,3055,146
+Colorado,405,7.3,Grand Junction,71,3204,136
+Connecticut,1279,9.4,Hartford,56,2585,82
+Delaware,1160,12.9,Wilmington,,,97
+Florida,1385,21.5,Tampa,66,2927,101
+Georgia,1287,17.5,Macon,66,2986,112
+Hawaii,1618,21.1,Honolulu,71,,90
+Idaho,481,6.9,Boise,64,2993,120
+Illinois,996,11.0,Peoria,56,2567,95
+Indiana,1060,10.9,Indianapolis,55,2440,88
+Iowa,864,8.8,Des Moines,59,2691,105
+Kansas,733,12.4,Wichita,65,2922,128
+Kentucky,1242,13.1,Louisville,56,2514,93
+Louisiana,1528,19.1,New Orleans,57,2649,101
+Maine,1072,5.0,Portland,57,2513,101
+Maryland,1131,12.3,Baltimore,57,2582,105
+Massachusetts,1211,8.8,Boston,58,2634,98
+Michigan,833,6.9,Lansing,51,2392,71
+Minnesota,693,5.1,Minneapolis,58,2711,95
+Mississippi,1499,17.4,Jackson,61,2720,111
+Missouri,1071,12.5,Springfield,60,2690,115
+Montana,390,5.9,Helena,59,2698,82
+Nebraska,599,9.3,Lincoln,61,2762,117
+Nevada,241,9.9,Reno,79,3646,158
+New Hampshire,1103,6.6,Concord,54,2519,90
+New Jersey,1196,11.5,Atlantic City,56,2499,94
+New Mexico,370,11.9,Albuquerque,76,3415,167
+New York,1062,7.4,Syracuse,46,2120,63
+North Carolina,1279,15.0,Greensboro,60,2651,109
+North Dakota,452,4.7,Bismarck,59,2738,93
+Ohio,993,10.4,Columbus,50,2183,72
+Oklahoma,927,15.3,Oklahoma City,68,3089,139
+Oregon,695,9.1,Portland,48,2341,68
+Pennsylvania,1089,9.3,Harrisburg,58,2614,87
+Rhode Island,1218,10.1,Providence,58,2606,98
+South Carolina,1264,16.9,Columbia,64,2826,115
+South Dakota,511,7.3,Huron,63,2947,104
+Tennessee,1376,14.2,Nashville,56,2510,102
+Texas,734,18.2,Dallas,61,2850,135
+Utah,310,9.2,Salt Lake City,66,3029,125
+Vermont,1085,6.1,Burlington,49,2295,58
+Virginia,1125,12.8,Richmond,63,2829,100
+Washington,976,9.1,Seattle,47,2170,58
+West Virginia,1147,11.0,Beckley,,,60
+Wisconsin,829,6.2,Madison,54,2428,89
+Wyoming,328,5.6,Lander,68,3073,114
