@@ -1,0 +1,371 @@
+text
+<s>[INST] What does OPL stand for in the OPL programming language? [/INST] OPL is short for Open Programming Language </s>
+<s>[INST] Which company developed the OPL programmung language? [/INST] Psion Ltd created OPL for the Psion Organiser </s>
+<s>[INST] Which was the original name for the OPL programming language? [/INST] The OPL language was originally named Organiser Programming Language </s>
+<s>[INST] Who created the OPL programming language? [/INST] The OPL language was designed by Colly Myers and implemented by Richard Harrison and Martin Stamp of Psion Ltd. </s>
+<s>[INST] What was the first implementation of OPL? [/INST] The first implementation of the OPL programming language was in 1984 for the Psion Organiser. </s>
+"<s>[INST] What does the REM keyword stand for in OPL? [/INST] REM is short for REMark.  it is used to represent a comment in OPL.  For example:
+REM i am a comment </s>"
+"<s>[INST] What does the PROC keyword stand for in OPL? [/INST] PROC is short for Procedure. The PROC keyword is used to indicate the start of a procedure.  For example:
+PROC myprog:
+	PRINT ""Hello World""
+ENDP </s>"
+"<s>[INST] in OPL, the PRINT statement is used to display output to the screen.  for example: PRINT ""Hello World"" [/INST] PRINT ""I will be displayed to the screen"" </s>"
+"<s>[INST] in the OPL programming language, keywords should be written in UPPERCASE, for example: PRINT ""PRINT should be written in captial letters"" [/INST] PRINT ""PRINT is a keyword"" </s>"
+"<s>[INST] in the OPL programming language, comments are represented by the REM keyword.  REM is short for remark. REM is implemented as single line comment, for example:
+REM This is an example of a comment [/INST] REM This is another example of a comment </s>"
+"<s>[INST] in the OPL programming language, comments can be placed anywhere in a line using the rem keyword.  any text in the line after the rem will be ignored.  for example:
+PRINT ""hello world"" rem This is a comment [/INST] PRINT ""I am not a comment"" REM I am a comment </s>"
+"<s>[INST] in OPL, the GET command stops the program until a user presses a key.  This is useful for displaying input, where if the PRINT statement was not followed by a GET command then the message may only be displayed for a short amount of time meaning the user may not see it.  for example: PRINT ""Hello World""
+GET [/INST] PRINT ""I will be disappear if there is no GET"" </s>"
+"<s>[INST] in OPL, string concatenation is performed using the , operator, for example: PRINT 
+""hello "" , ""chris"" [/INST] PROC main:
+	PRINT ""Hello "" , ""World""
+	GET
+ENDP </s>"
+"<s>[INST] in OPL, variables local to the procedure are declared using the LOCAL keyword followed by the name of the variable.  by default variables are declared as real numbers (or floats).  = is the assignment operator in OPL. for example: LOCAL pi
+pi=3.14 [/INST] PROC main:
+	LOCAL pi
+pi=3.14
+
+PRINT pi
+	GET
+ENDP </s>"
+"<s>[INST] in OPL, variables can be declared and assigned in a single statement.  = is the assignment operator in OPL, for example: LOCAL pi=3.14 [/INST] PROC main:
+	LOCAL pi=3.14
+
+PRINT pi
+	GET
+ENDP </s>"
+"<s>[INST] in OPL, if you wish to declare a local variable as an integer you would postfix the % symbol after the variable name. for example: LOCAL num%=10 [/INST] PROC main:
+	LOCAL num%=10
+
+	PRINT num%
+	GET
+ENDP </s>"
+"<s>[INST] in OPL, if you wish to declare a local variable as a string you would postfix the $ symbol after the variable name and include the length of the stirng in parenthesis.  for example: LOCAL firstname$(10)
+firstname$=""Chris"" [/INST] PROC main:
+	LOCAL firstname$(10)=""Chris""
+
+	PRINT ""Hello "" , firstname$
+	GET
+ENDP </s>"
+"<s>[INST] in OPL, users can input values from the keyboard using the INPUT keyword.  for example: INPUT name$ [/INST] PROC main:
+	LOCAL name$(10)
+PRINT ""Enter your name?""
+INPUT name$
+PRINT ""Hello "" + name$
+GET
+ENDP </s>"
+"<s>[INST] in OPL, + is used for addition, - is used for subtraction, / is used for division, and * is used for multiplication. for example: LOCAL calculation%=((10+20-6)*3)/2 [/INST] PROC calculations:
+	LOCAL num1% = 10
+	LOCAL num2% = 5
+
+	PRINT ""Addition:"", num1% + num2%
+	PRINT ""Subtraction:"", num1% - num2%
+	PRINT ""Multiplication:"", num1% * num2%
+	PRINT ""Division:"", num1% / num2%
+
+	GET
+ENDP </s>"
+"<s>[INST] OPL supports the following comparison operators, = is equals, < less than, > greater than, >= greater than or equal to, <= less than or equal to, <> not equal to [/INST] PROC main:
+	LOCAL a, b
+
+	a = 10
+	b = 5
+
+	IF a > b THEN
+		PRINT ""a > b""
+	ENDIF
+
+	IF a < b THEN
+		PRINT ""a < b""
+	ENDIF
+
+	IF a >= b THEN
+		PRINT ""a >= b""
+	ENDIF
+
+	IF a <= b THEN
+		PRINT ""a <= b""
+	ENDIF
+
+	IF a = b THEN
+		PRINT ""a = b""
+	ENDIF
+
+	IF a <> b THEN
+		PRINT ""a <> b""
+	ENDIF
+
+	GET
+ENDP </s>"
+"<s>[INST] OPL supports the following bitwise operators: AND, OR, NOT [/INST] PROC main:
+	LOCAL a, b
+
+	a = 10
+	b = 5
+
+	IF a > b THEN
+		PRINT ""a > b""
+	ENDIF
+
+	IF a < b THEN
+		PRINT ""a < b""
+	ENDIF
+
+	IF a >= b THEN
+		PRINT ""a >= b""
+	ENDIF
+
+	IF a <= b THEN
+		PRINT ""a <= b""
+	ENDIF
+
+	IF a = b THEN
+		PRINT ""a = b""
+	ENDIF
+
+	IF a <> b THEN
+		PRINT ""a <> b""
+	ENDIF
+
+	GET
+ENDP </s>"
+"<s>[INST] There is no modulo operator in OPL, so this would need to be calculated using integer division [/INST] PROC main:
+	LOCAL dividend%, divisor%, remainder%
+
+	dividend% = 17
+	divisor% = 5
+
+	remainder% = dividend% % divisor%
+
+	PRINT ""Dividend:"", dividend%
+	PRINT ""Divisor:"", divisor%
+	PRINT ""Remainder:"", remainder%
+
+	GET
+ENDP </s>"
+"<s>[INST] in OPL, procedures are declared as PROC followed by the name of procedure, and a colon, indicating the code block will follow on the next line. The Procedure block ends with the keyword ENDP  For example PROC hello:
+	 PRINT""Hello World""
+ENDP [/INST] The following is an example of a procedure in OPL: PROC hello:
+	PRINT""Hello World""
+ENDP </s>"
+"<s>[INST] to call a procedure in OPL, you would call the procedure name followed by a colon.  for example: PROC hello:
+	 PRINT""Hello"" 
+world:
+
+ENDP
+
+PROC world:
+	 PRINT""World""
+ENDP [/INST] The following is an example of a procedure in OPL: PROC hello:
+	 PRINT""Hello""
+ENDP </s>"
+"<s>[INST] in OPL, procedures with parameters are declared as PROC followed by the name of procedure, a pair of parenthesis with a list of parameters (including type annotation) enclosed followed by a colon, indicating the code block will follow on the next line. The Procedure block ends with the keyword ENDP  For example PROC display_number(a%):
+	PRINT a% 
+ENDP [/INST] The following is an example of a procedure where a name is passed to the greet procedure, and the procedure greets the person: PROC main:
+	greet:(""Bob"")
+ENDP
+
+PROC greet(name$):
+	PRINT""Hello "", name$
+ENDP </s>"
+"<s>[INST] to call a procedure in OPL with parameters, you would call the procedure name followed by a colon followed by the parameter list enclosed in a pair of parenthesis.  for example the following example would call the sum procedure passing integers 10 and 20: sum:(10,20) [/INST] The following is an example of a procedure where a name is passed to the greet procedure, and the procedure greets the person: PROC main:
+	 greet:(""Bob"")
+ENDP
+
+PROC greet(name$):
+	PRINT""Hello "", name$
+ENDP </s>"
+"<s>[INST] to return a value from a procedure in OPL, you would use the RETURN keyword.  for example: PROC sum:
+	RETURN a+b
+ENDP [/INST] The following is an example of a procedure that sums two numbers: PROC main:
+	PRINT sum:(10,20)
+ENDP
+
+PROC sum(a%,b%):
+	RETURN a+b
+ENDP </s>"
+<s>[INST] Write a comment in the Psion OPL programming language. [/INST] REM i am a comment </s>
+"<s>[INST] Write a multi-line comment in the OPL programming language. [/INST] REM This is a comment
+REM This is also a comment
+REM Another comment </s>"
+"<s>[INST] Write a limerick as comments in the OPL programming language. [/INST] REM There once was a language called OPL
+REM For Psion it served very well
+REM The hardware disappeared
+REM The programmers they jeered
+REM And they sent the blackberries to hell </s>"
+"<s>[INST] Show me an example of an inline comment in OPL. [/INST] PRINT ""I am not a comment"" rem but I am </s>"
+"<s>[INST] Write a program in OPL that prints ""Hello, World!"" to the screen. [/INST] PROC main:
+	PRINT ""Hello World""
+	GET
+ENDP </s>"
+"<s>[INST] Write a program in OPL with comments that prints ""Hello, World!"" to the screen. [/INST] PROC main:
+	REM prints hello world to the screen
+	PRINT ""Hello World""
+
+	REM waits for the user input before exiting
+	GET
+ENDP rem end of the program </s>"
+"<s>[INST] create a program with a program header including copyright in OPL [/INST] REM Program: My OPL Program
+REM Author: Your Name
+REM Copyright © 2023 Your Company or Your Name
+
+PROC main:
+	REM Your program code starts here
+	PRINT ""Hello, World!""
+
+	REM Wait for user input before exiting
+	GET
+ENDP
+
+ In this example i've created a hello world program with typical header.  You can modify the example to include your name or company </s>"
+"<s>[INST] create a program in opl that adds 2 numbers together and displays the output [/INST] PROC add:
+	LOCAL num1%
+	LOCAL num2%
+	LOCAL sum%
+
+	PRINT ""Enter the first number:""
+	INPUT num1%
+
+	PRINT ""Enter the second number:""
+	INPUT num2%
+
+	sum% = num1% + num2%
+	PRINT sum%
+
+	GET
+ENDP </s>"
+"<s>[INST] create a program in OPL that asks the user their name, and prints it to the screen [/INST] PROC main:
+	LOCAL name$(20)
+
+	PRINT ""Enter your name:""
+	INPUT name
+
+	PRINT ""Hello, "" , name$
+	GET
+	ENDP </s>"
+"<s>[INST] create a program in OPL that asks the users name, age and date of birth and prints it to the screen.   include comments in the code and a program header. [/INST] REM Program: User Information
+REM Author: Your Name
+REM Copyright © 2023 Your Company or Your Name
+
+PROC main:
+	LOCAL name$(30)
+	LOCAL age%
+	LOCAL dob$(20)
+	PRINT ""Enter your name:""
+	INPUT name
+	PRINT ""Enter your age:""
+	INPUT age
+	PRINT ""Enter your date of birth:""
+	INPUT dob$
+	PRINT ""User Information:""
+	PRINT ""Name: "" , name$
+	PRINT ""Age: "" , STR$(age)
+	PRINT ""Date of Birth: "" , dob$
+	GET
+ENDP </s>"
+"<s>[INST] create a program in OPL that calculates the percentage of a given number and percentage and displays the result to the screen [/INST] PROC calc_perc:
+	LOCAL number%
+	LOCAL percentage
+	PRINT ""Enter the number:""
+	INPUT number%
+	PRINT ""Enter the percentage:""
+	INPUT percentage
+	LOCAL result
+	result = (number% * percentage) / 100.0
+	PRINT ""Percentage:"", result
+	GET
+ENDP </s>"
+"<s>[INST] create a program in OPL that calculates the area of a rectangle:  [/INST] PROC calculate_area:
+	LOCAL length%
+	LOCAL width%
+	LOCAL area%
+	PRINT ""Enter the length of the rectangle:""
+	INPUT length%
+	PRINT ""Enter the width of the rectangle:""
+	INPUT width%
+	area% = length% * width%
+	PRINT ""The area of the rectangle is:"", area%
+	GET
+ENDP </s>"
+"<s>[INST] Create a program in OPL that adds 2 numbers together.  the sum should be implemented as a procedure [/INST] PROC main: LOCAL num1%
+LOCAL num2%
+PRINT ""Enter the first number:""
+INPUT num1%
+PRINT ""Enter the second number:""
+INPUT num2%
+LOCAL result%
+result% = sum:(num1%,num2%)
+PRINT ""Sum:"", result%
+GET
+ENDP
+
+PROC sum(a%, b%):
+RETURN a% + b%
+ENDP </s>"
+"<s>[INST] Create a leap year checking program in psion OPL [/INST] here is a leap year checker in OPL, please note there is no modulo command in OPL, so i've used integer division to calculate the remainder: PROC main:
+	LOCAL year%
+	PRINT ""Leap Year Checker\n""
+	PRINT ""Enter a year:""
+	INPUT year%
+	IF is_leap_year:(year%) = 1 THEN
+		PRINT year% + "" is a leap year.""
+	ELSE
+		PRINT year% + "" is not a leap year.""
+	ENDIF
+	GET
+ENDP
+
+PROC is_leap_year(year%):
+	LOCAL is_leap%
+	is_leap% = 0
+	IF (year% / 4) * 4 = year% AND ((year% / 100) * 100 <> year% OR (year% / 400) * 400 = year%) THEN
+		is_leap% = 1
+	ENDIF
+	RETURN is_leap%
+ENDP </s>"
+"<s>[INST] Create an interest calculator in OPL [/INST] PROC main:
+	LOCAL principal%
+	LOCAL rate%
+	LOCAL time%
+	PRINT ""Simple Interest Calculator\n""
+	PRINT ""Enter the principal amount:\n""
+	INPUT principal%
+	PRINT ""Enter the interest rate (in basis points, e.g., 500 for 5%):\n""
+	INPUT rate%
+	PRINT ""Enter the time (years):\n""
+	INPUT time%
+	LOCAL interest_basis_points
+	interest_basis_points = (principal% * rate% * time%) / 100
+	LOCAL interest
+	interest = interest_basis_points / 1000.0
+	PRINT ""Interest:"", interest
+	GET
+ENDP
+
+PROC calculate_interest(p%, r%, t%):
+	LOCAL interest_basis_points
+	interest_basis_points = (p% * r% * t%) / 100
+	RETURN interest_basis_points
+ENDP </s>"
+"<s>[INST] Create an income tax calculator in OPL [/INST] PROC main:
+	LOCAL income
+	PRINT ""Income Tax Calculator\n""
+	PRINT ""Enter your income:""
+	INPUT income
+	LOCAL tax
+	IF income <= 10000 THEN
+		tax = 0.05 * income
+	ELSEIF income <= 50000 THEN
+		tax = 0.1 * income
+	ELSEIF income <= 100000 THEN
+		tax = 0.2 * income
+	ELSE
+		tax = 0.3 * income
+	ENDIF
+	PRINT ""Income: "", income
+	PRINT ""Tax: "", tax
+	GET
+ENDP </s>"
